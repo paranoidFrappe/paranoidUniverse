@@ -1,0 +1,291 @@
+@font-face {
+  font-family: 'Dakon';
+  src: url('../fonts/Dakon-K7wle.ttf');
+}
+@font-face {
+  font-family: 'Ruthie';
+  src: url('../fonts/Ruthie-Regular.ttf');
+}
+@font-face {
+  font-family: 'Justice_Love';
+  src: url('../fonts/justice\ love.ttf');
+}
+@font-face {
+  font-family: 'homework_farmhouse';
+  src: url('../fonts/Homework\ Farmhouse.otf');
+}
+@font-face {
+  font-family: 'Saltcity';
+  src: url('../fonts/SaltcityRegular-mL6Vv.otf');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+  }
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.world{
+  position: absolute;
+  background: rgba(0, 0, 0, 1);
+
+  width: 2800px;
+  height: 2000px;
+  z-index: -2147483600;
+
+}
+
+#world000 {
+    position: absolute;
+    z-index: -10;
+    background-color: transparent;
+
+    /* background: rgba(50, 50, 50, 0.8); */
+
+}
+
+#world001 {
+  /* background-color: rgb(34, 42, 45); */
+  background-color: transparent;
+}
+#messageDivInput{
+  position: fixed;
+  background-color: transparent;
+  height: 29px;
+  width: clamp(450px, 40vw, 40vw);
+  z-index: 20000000;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#messageBoard{
+  position: fixed;
+  background: linear-gradient(to top, rgba(15, 50, 100, 0.18), rgba(15, 50, 100, 0.12), rgba(15, 50, 100, 0.06), rgba(15, 50, 100, 0.01) 100%);
+  height: 160px;
+  width:  clamp(450px, 39.2vw, 39.2vw);
+  bottom: 30px;
+  left: -10px;
+  right: 0;
+  margin: auto;
+  padding: 0px 0px 0px 5px;
+  color:beige;
+  overflow: auto; max-height: 160px;
+}
+
+#messageBoard li { 
+  background-color: transparent;
+  padding: 0.2rem 0.5rem;
+  list-style: none;
+}
+
+#messageInput { 
+  display: inline-block;
+  background-color: rgba(15, 50, 120, 0.25);
+  color: rgb(128, 199, 128);
+  border: solid 1px rgba(25, 75, 150, 0.25);
+  height: 28px;
+  width: 88%;
+  bottom: 0px;
+  padding-left: 1%;
+  border-radius: 5px;  
+}
+
+#nameInput,
+#accInput,
+#accInput2,
+#pwInput2,
+#pwInput { 
+  display: inline-block;
+  background-color: rgba(15, 50, 120, 0.25);
+  color: rgb(128, 199, 128);
+  border: solid 1px rgba(255, 90, 240, 0.25);
+  height: 28px;
+  width: 88%;
+  bottom: 0px;
+  padding-left: 1%;
+  border-radius: 5px;  
+  margin-bottom: 8px;
+}
+
+
+#nameInput:focus,
+#accInput:focus,
+#pwInput:focus,
+#accInput2:focus,
+#pwInput2:focus,
+#messageInput:focus { 
+  outline: none;
+}
+
+#messageBtn {
+  font-weight: 600;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: inline-block;
+  background-color: rgba(50, 50, 50, 0.5);
+  color: rgb(183, 255, 231);
+  font-size: 16px;
+  display: inline-block;
+  border: solid 1px rgba(25, 25, 25, 0.5);
+  height: 28px;
+  width: 10.3%;
+  border-radius: 5px;  
+  bottom: 0px;
+  margin-left: 0.3%;
+}
+
+/*///////////////////////*/
+/*/ login part  VVVVVVV /*/
+
+.barbarM {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 2222222;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.barbarM2 {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -2111111;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.barbar2,
+.barbar {
+  font-family: sans-serif;
+  color: rgb(136, 189, 184);
+  padding: 0;
+  height: 460px;
+  width: 300px;
+  min-width: 160px;
+  border: solid 1px rgba(200, 200, 200, 0.25);
+  margin: auto;
+  box-shadow: 0px 3px 4px rgba(150, 150, 150, 0.25);
+}
+
+.barbarC2,
+.barbarC {
+  height: 440px;
+  width: 280px;
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+  position: relative;
+}
+
+.realTitleLM,
+.realTitleRM{
+  font-size: 36px;  
+  rotate: -8deg;
+  background-color: transparent;
+}
+
+.realTitleL{
+  background: linear-gradient(to right, #85909d, #bbd7eb, #b5e9ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  margin-left: 12px;
+  font-weight: 600;
+  font-family: 'Ruthie';
+}
+
+.realTitleR{
+  background: linear-gradient(to right, #85909d, #bbd7eb, #b5e9ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  margin-left: 45px;
+  font-weight: 600;
+  font-family: 'Ruthie';
+}
+
+.subTitle {
+  font-size: 22px;
+  text-align: center;
+  display: flex;
+  justify-content: right; 
+  align-items: center; 
+  margin-bottom: 15px;
+  rotate: 8deg;
+  background-color: transparent;
+}
+
+.subTitleC {
+  font-family: 'Dakon';
+  background-color: transparent;
+}
+
+.choiceT {
+  font-size: 24px;
+  font-family: 'homework_farmhouse';
+}
+
+#loginBtn2,
+#loginBtn {
+  background: linear-gradient(to right, #85909d, #b5e9ff, #707b87);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  height: 24px;
+  width: 90px;
+  margin: 45px 0px 0px 0px;
+  font-family: 'Saltcity';
+  font-size: 22px;
+  position: absolute;
+  right: 0;
+}
+#loginBtn2:hover,
+#loginBtn:hover {
+  cursor: pointer;
+}
+
+#goToSignupBtn,
+#goToLoginBtn {
+  height: 24px;
+  width: 190px;
+  margin: 10px 0px 0px 0px;
+  background-color: transparent;
+  color:rgba(255, 255, 200, 0.75);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: ridge 2px rgba(255, 255, 150, 0.45);
+  font-family: 'Saltcity';
+  font-size: 22px;
+}
+
+#goToSignupBtn:hover,
+#goToLoginBtn:hover {
+  cursor: pointer;
+}

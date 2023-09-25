@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paranoid Project</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/major.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"> 
+
+</head>
+<body>
+    <div class = "barbarM" id = "barbarM">
+        <div class = "barbar">
+            <div class = "barbarC">
+                <div class = 'realTitleLM'>
+                    <span class = 'realTitleL'>Welcome to </span>
+                </div> 
+                <div class = 'realTitleRM'>
+                    <span class = 'realTitleR'>ParanoidUniverse</span>
+                </div>
+                <div class = 'subTitle'>
+                    <span class = 'subTitleC'>Sign Up</span>
+                </div>
+                <span class = 'choiceT'>Your name : </span><br>
+                <input id="nameInput" autocomplete="off" placeholder="Fancy name please~"/>
+                <span class = 'choiceT'>Account ID : </span><br>
+                <input id="accInput" autocomplete="off" placeholder="ah...you know, just account"/>
+                <span class = 'choiceT'>Password : </span><br>
+                <input id = "pwInput" type = "password" autocomplete = "off" placeholder="let's keep everyone in the dark... A_A"/>
+
+
+                <button id="loginBtn">Stay cool</button>
+                <button id="goToLoginBtn">I've been here before...</button>
+            </div>
+        </div>
+    </div>
+    <div class = "barbarM2" id = "barbarM2">
+        <div class = "barbar2">
+            <div class = "barbarC2">
+                <div class = 'realTitleLM'>
+                    <span class = 'realTitleL'>Welcome to </span>
+                </div> 
+                <div class = 'realTitleRM'>
+                    <span class = 'realTitleR'>ParanoidUniverse</span>
+                </div>
+                <div class = 'subTitle'>
+                    <span class = 'subTitleC'>Sign In</span>
+                </div>
+                <span class = 'choiceT'>Account ID : </span><br>
+                <input id="accInput2" autocomplete="off" placeholder="ah...you know, your account"/>
+                <span class = 'choiceT'>Password : </span><br>
+                <input id = "pwInput2" type = "password" autocomplete = "off" placeholder="best password I never seen..."/>
+
+                
+                <button id="loginBtn2">Stay cool</button>
+                <button id="goToSignupBtn">Go to build your character</button>
+            </div>
+        </div>
+    </div>
+    <div class = "world" id = "world">
+        <canvas id = "world000"></canvas>
+        <canvas id = "world001"></canvas>
+        <div id = "messageBoard">
+            <ul id="messages"></ul>
+        </div>
+        <div id = "messageDivInput">
+
+            <form id = "form" action = "">
+                <input id = "messageInput" autocomplete = "off" /><button id = "messageBtn">Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="/public/js/socket.io.js"></script>
+    <script src="/public/js/login.js"></script>
+    <script src="/public/js/gamegame.js"></script>
+    <script src="/public/js/mapmap.js"></script>
+    
+    <script>
+
+
+// const newPlayer = game.ballGeneration(500, 850, 40, 50, 0.5, 0, 0, colorCodeT[Math.floor(Math.random() * 15)]);
+
+
+    </script>
+</body>
+</html>
